@@ -29,7 +29,7 @@ These Two are important steps of setup project
    a. **POST**: use for store data in a database
    localhost:8080/employees/add
    
-   /add - is used for add an Employee in Database ,you can see there code in Controller package 
+   is used for add an Employee in Database ,you can see there code in Controller package 
    ![image](https://github.com/Ankushthalet/EmployWise/assets/116317444/a5a35ae1-e5fa-4c97-97d8-42cfb905f54f)
 
    b.** GET**: use for get data from a database
@@ -73,8 +73,6 @@ These Two are important steps of setup project
    c. **DELETE **: just provide id of employee you want to delete in uri
    We want to delete md. Shadab from database
    ![image](https://github.com/Ankushthalet/EmployWise/assets/116317444/2e8e1040-1b65-4546-8bbe-ac86ef39499d)
-
-   localhost:8080/employees/getall
    ![image](https://github.com/Ankushthalet/EmployWise/assets/116317444/343332ec-8d06-4fea-a10e-f0a5adbec7e5)
    After Delete data will be delete from database
    
