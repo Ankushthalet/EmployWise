@@ -1,5 +1,6 @@
+**Assignment of Add Employee to a Database**
 ![image](https://github.com/Ankushthalet/EmployWise/assets/116317444/4bda66b4-7bb9-445c-b7aa-88d506427adf)# EmployWise
-Assignment of Add Employee to a Database
+
 **I use Mongodb no SQL database**
 
 **How run project:**
@@ -21,22 +22,52 @@ These Two are important steps of setup project
 
 
 2. How run API
-         a. Use Postman (is an API platform that simplifies each step of the API lifecycle and streamlines collaboration) or your comfort plateform for testing API.
-         b. Test Api one by one .
-         c. Use JSON format for testing .
+         . Use Postman (is an API platform that simplifies each step of the API lifecycle and streamlines collaboration) or your comfort plateform for testing API.
+         . Test Api one by one .
+         . Use JSON format for testing .
+   
    a. **POST**: use for store data in a database
    localhost:8080/employees/add
+   
    /add - is used for add an Employee in Database ,you can see there code in Controller package 
    ![image](https://github.com/Ankushthalet/EmployWise/assets/116317444/a5a35ae1-e5fa-4c97-97d8-42cfb905f54f)
 
    b.** GET**: use for get data from a database
    localhost:8080/employees/all
-   ![image](https://github.com/Ankushthalet/EmployWise/assets/116317444/adadf5db-c2a1-493a-ab15-89a46fc7c6bb)
-
+   Provide you all employee that are available in your database
+  [
+    {
+        "id": "acef9b6c-2302-4ec3-85aa-2b3eb9b1b462",
+        "employeeName": "Ankush",
+        "phoneNumber": "862989XXXX",
+        "email": "minakshithalet@gmail.com",
+        "reportsTo": "null",
+        "profileImage": "https://jooinn.com/images/beauty-of-nature-24.jpg"
+    },
+    {
+        "id": "4fdf8688-93d5-45a7-a5d9-0492eee1ce5b",
+        "employeeName": "Harish",
+        "phoneNumber": "723989XXXX",
+        "email": "harish@gmail.com",
+        "reportsTo": "acef9b6c-2302-4ec3-85aa-2b3eb9b1b462",
+        "profileImage": "https://www.bing.com/ck/a?!&&p=b3570101dd727ccbJmltdHM9MTcwMjk0NDAwMCZpZ3VpZD0zYTNlMzU2MS0yNTNiLTZhZjAtM2I3ZS0yNmNmMjRjOTZiNGUmaW5zaWQ9NTU1OQ&ptn=3&ver=2&hsh=3&fclid=3a3e3561-253b-6af0-3b7e-26cf24c96b4e&u=a1L2ltYWdlcy9zZWFyY2g_cT1pbWFnZXMmRk9STT1JUUZSQkEmaWQ9MTNBQUNGMzY2NjZFMEYxRDhENzQ0MjM1QkVDODBDNjRFOUU4MEE1RQ&ntb=1"
+    },
+    {
+        "id": "7c8c4aa4-fa8e-4bdd-8190-5498ad5ef54c",
+        "employeeName": "John Doe",
+        "phoneNumber": "+1234567890",
+        "email": "john.doe@example.com",
+        "reportsTo": "acef9b6c-2302-4ec3-85aa-2b3eb9b1b462",
+        "profileImage": "https://i.pinimg.com/736x/76/d9/8a/76d98a8b6830ac49085c416c0ebea456--outdoor-pictures-sunset-pictures.jpg"
+    },
+   ......................
+   ......................
+   ......................
    
-   all- get all the Employee from database
+]
+
    **You can Also get Employee by their id **
-    localhost:8080/employees/getall
+    localhost:8080/employees/931f6f78-2456-486d-bd0a-1b9b20531601 
    ![image](https://github.com/Ankushthalet/EmployWise/assets/116317444/642896df-c609-4834-a4cf-f4b20c799853)
 
    c. **DELETE **: just provide id of employee you want to delete in uri
