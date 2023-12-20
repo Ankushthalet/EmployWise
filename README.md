@@ -55,6 +55,7 @@ These Two are important steps of setup project
 a. GET nth LEVEL Manager of an Employeer:
 
 code is :![image](https://github.com/Ankushthalet/EmployWise/assets/116317444/343332ec-8d06-4fea-a10e-f0a5adbec7e5)
+API
 ![image](https://github.com/Ankushthalet/EmployWise/assets/116317444/5a28dc9b-d3af-4b6d-9682-68c2aed62bdb)
 To send a request to the getNthLevelManager endpoint, you can use a tool Postman, or a browser to make HTTP requests.
 example using curl in the command line:curl -X GET "http://localhost:8080/employees/manager?employeeId=yourEmployeeId&level=2"
@@ -99,6 +100,7 @@ size=5,
 sortBy=employeeName
 Then URL will be :
 http://localhost:8080/employees/paged?page=1&size=5&sortBy=employeeName
+
 Here is Output:
 ![image](https://github.com/Ankushthalet/EmployWise/assets/116317444/f95bd7cb-4dbb-4ca1-a306-142efe3b17e3)
 ![image](https://github.com/Ankushthalet/EmployWise/assets/116317444/19141f41-45fa-4f3b-9a5e-57c32deb90f7)
